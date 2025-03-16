@@ -21,6 +21,7 @@ const config: Config = {
         "dark-50": "#25272A",
         "dark-100": "#050505",
         "dark-200": "#33404A",
+        "dark-300": "#052B1E",
 
         // Custom blue colors
         "blue-50": "#E2F0FE",
@@ -29,10 +30,18 @@ const config: Config = {
         // Custom gray colors
         "gray-50": "#667F93",
       },
+      borderRadius: {
+        "4xl": "2rem",
+        "5xl": "2.5rem",
+      },
+      maxWidth: {
+        "8xl": "90rem",
+      },
     },
     fontFamily: {
       raleway: ["var(--font-raleway)"],
     },
+    
   },
   plugins: [],
 };
