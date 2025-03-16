@@ -1,9 +1,15 @@
+import { Link } from "~/navigation";
 import Breadcrumb from "../components/Breadcrumb";
+import { InputSearch } from "../components/Input";
+import Pagination from "../components/Pagination";
+import HeroBanner from "./components/HeroBanner";
+import BlogItem from "~/app/components/Blog/Item";
+import { GoArrowUpRight } from "react-icons/go";
 
 export default function HomePage() {
   return (
-    <div className="h-[1000px]">
-      <div className="max-w-8xl flex items-center justify-center mt-12 px-5 mx-auto">
+    <div>
+      <div className="container flex items-center justify-center mt-12">
         <Breadcrumb
           items={[
             { name: "Trang chủ", href: "/" },
@@ -13,14 +19,14 @@ export default function HomePage() {
         />
       </div>
 
-      <div className="max-w-8xl flex items-center 2xl:justify-between justify-center px-5 lg:py-20 py-5 mx-auto">
+      <div className="container flex items-center lg:justify-between justify-center lg:py-20 py-5">
         <img
           src="/images/blogPage/calender.png"
           alt="icon"
           title="icon"
           width="auto"
           height="auto"
-          className="2xl:block hidden w-[195px]"
+          className="lg:block hidden w-[195px] z-[1]"
         />
 
         <div className="lg:w-1/2 w-full">
@@ -48,151 +54,199 @@ export default function HomePage() {
           title="icon"
           width="auto"
           height="auto"
-          className="2xl:block hidden w-[195px]"
+          className="lg:block hidden w-[195px] z-[1]"
         />
       </div>
 
-      <div className="bg-gray-50 min-h-screen font-sans">
-        <div className="max-w-7xl mx-auto flex">
+      <div className="relative">
+        <img
+          src="/images/global/bg_left.png"
+          alt="imFage"
+          title="image"
+          width={"auto"}
+          height={"auto"}
+          className="absolute left-0 -top-1/2 z-[0]"
+        />
+
+        <div className="relative container flex lg:flex-row flex-col-reverse justify-between z-[1]">
           {/* Main content area */}
-          <div className="flex-1 px-4 py-6">
-            <div className="flex justify-between items-center mb-6">
-              <h1 className="text-xl font-bold">Tất Cả Bài Viết</h1>
-              <h2 className="text-lg">Tin Mới</h2>
-            </div>
+          <div className="lg:w-8/12 w-full px-4 py-6">
+            <h2 className="text-4xl font-extrabold">Tất Cả Bài Viết</h2>
 
             {/* Hero banner */}
-            <div className="bg-blue-600 text-white rounded-lg p-6 mb-6 flex items-center">
-              <div className="w-3/5">
-                <h3 className="text-xl font-bold mb-1">
-                  Giải pháp công đồng FMRP - Kết nối, chia sẻ, cùng phát triển!
-                </h3>
-                <button className="bg-white text-blue-600 px-4 py-1 rounded-md text-sm font-medium mt-3">
-                  Xem thêm
-                </button>
-              </div>
-              <div className="w-2/5 flex justify-end">
-                <img
-                  src="/api/placeholder/180/120"
-                  alt="Digital illustration"
-                  className="h-32"
-                />
-              </div>
-            </div>
+            <HeroBanner />
 
             {/* Blog grid */}
-            <div className="grid grid-cols-3 gap-6">
-              <div
-                className="bg-white rounded-lg shadow-sm overflow-hidden">
-                <div className="bg-blue-600 text-white p-4">
-                  <h3 className="text-xl font-bold">test</h3>
-                </div>
-                <div className="p-4">
-                  <p className="text-sm text-gray-700 mb-4">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At explicabo aperiam eum rerum voluptatibus eaque commodi quos rem minima modi! Dignissimos facilis debitis beatae ipsa quaerat nostrum magnam provident impedit.
-                  </p>
-                  <div className="flex justify-between items-center text-xs text-gray-500">
-                    <span>17/11/2022</span>
-                  </div>
-                  <a
-                    href="#"
-                    className="text-blue-600 text-sm font-medium mt-3 block">
-                    Xem chi tiết
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Pagination */}
-            <div className="flex justify-center mt-8">
-              <div className="flex space-x-2">
-                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-100">
-                  &lt;
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full bg-blue-600 text-white">
-                  1
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-100">
-                  2
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-100">
-                  3
-                </button>
-                <button className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-100">
-                  &gt;
-                </button>
-              </div>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+              <BlogItem />
+              <BlogItem />
             </div>
           </div>
 
           {/* Right sidebar */}
-          <div className="w-72 py-6 px-3 bg-white border-l border-gray-200">
+          <div className="lg:w-4/12 w-full py-6 px-3">
             <div className="mb-6">
-              <h3 className="text-sm font-medium mb-3">Danh Mục</h3>
-              <ul className="space-y-3">
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-blue-600 hover:text-blue-700 flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+              <h2 className="text-2xl font-extrabold text-dark-100">
+                Tìm kiếm
+              </h2>
+              <InputSearch />
+            </div>
+
+            <div className="mb-6">
+              <h2 className="text-2xl font-extrabold text-dark-100">
+                Danh Mục
+              </h2>
+              <ul className="flex flex-col mt-6 gap-4">
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Tất cả
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-gray-700 hover:text-blue-600 flex items-center">
-                    <span className="w-1.5 h-1.5 bg-transparent border border-gray-300 rounded-full mr-2"></span>
-                    Tài liệu tự động
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-gray-700 hover:text-blue-600 flex items-center">
-                    <span className="w-1.5 h-1.5 bg-transparent border border-gray-300 rounded-full mr-2"></span>
-                    Lưu trữ
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-gray-700 hover:text-blue-600 flex items-center">
-                    <span className="w-1.5 h-1.5 bg-transparent border border-gray-300 rounded-full mr-2"></span>
-                    Thông báo
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-gray-700 hover:text-blue-600 flex items-center">
-                    <span className="w-1.5 h-1.5 bg-transparent border border-gray-300 rounded-full mr-2"></span>
-                    Tin tức khác
-                  </a>
-                </li>
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    108
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Thiết Kế Website
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    36
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Thiết Kế App Mobile
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    13
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Quản Lý Sản Xuất
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    25
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Quản Lý Bán Hàng
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    22
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Báo Chí Nói Về FOSO
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    7
+                  </span>
+                </Link>
+                <Link
+                  href="/"
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
+                    Tin Tức FOSO
+                  </li>
+                  <span className="text-lg font-medium text-gray-50 group-hover:text-green-200">
+                    5
+                  </span>
+                </Link>
               </ul>
             </div>
 
             {/* Support chat blocks */}
-            <div className="space-y-4">
-              <div className="bg-blue-600 text-white p-4 rounded-lg">
-                <h3 className="font-medium mb-2">Chat với chúng tôi</h3>
-                <p className="text-sm mb-3">Hỗ trợ giải đáp thắc mắc</p>
-                <button className="bg-white text-blue-600 px-3 py-1 rounded text-sm font-medium">
-                  Bắt đầu
-                </button>
+            <div className="flex lg:flex-col md:flex-row flex-col gap-8">
+              <div className="lg:w-full md:w-1/2 w-full bg-gradient-to-tr from-[#013DA0] to-[#0375F3] py-10 rounded-lg">
+                <img
+                  src="/images/advertisement/adv_2.png"
+                  alt="Digital illustration"
+                  width="auto"
+                  height="auto"
+                  className="mx-auto"
+                />
+
+                <div className="px-6">
+                  <div className="flex items-center justify-center mt-10 gap-5">
+                    <img
+                      src="/images/advertisement/adv_4.png"
+                      alt="Digital illustration"
+                      width="auto"
+                      height="auto"
+                    />
+
+                    <div className="flex flex-col items-center">
+                      <h3 className="text-xl font-bold text-white text-center">
+                        Miễn phí dùng thử
+                      </h3>
+                      <img
+                        src="/images/advertisement/adv_3.png"
+                        alt="Digital illustration"
+                        width="auto"
+                        height="auto"
+                      />
+                    </div>
+                  </div>
+
+                  <button className="w-full flex items-center justify-between text-white text-sm font-bold rounded-5xl h-[50px] mt-8 px-6 py-3 border-2 border-white gap-10">
+                    Tham gia ngay
+                    <GoArrowUpRight className="size-[18px] min-w-[18px]" />
+                  </button>
+                </div>
               </div>
-              <div className="bg-blue-600 text-white p-4 rounded-lg">
-                <h3 className="font-medium mb-2">Hỗ trợ trực tuyến</h3>
-                <p className="text-sm mb-3">
-                  Chúng tôi luôn sẵn sàng hỗ trợ bạn
-                </p>
-                <button className="bg-white text-blue-600 px-3 py-1 rounded text-sm font-medium">
-                  Liên hệ ngay
-                </button>
+
+              <div className="lg:w-full md:w-1/2 w-full bg-gradient-to-tr from-[#013DA0] to-[#0375F3] py-10 rounded-lg">
+                <img
+                  src="/images/advertisement/adv_5.png"
+                  alt="Digital illustration"
+                  width="auto"
+                  height="auto"
+                  className="mx-auto"
+                />
+
+                <div className="px-6">
+                  <p className="text-lg font-bold md:text-left text-center text-white my-6">
+                    Gia nhập cộng đồng FMRP Việt – Kết nối, chia sẻ, cùng phát
+                    triển!
+                  </p>
+
+                  <button className="w-full flex items-center justify-between text-white text-sm font-bold rounded-5xl h-[50px] px-6 py-3 border-2 border-white gap-10">
+                    Tham gia ngay
+                    <GoArrowUpRight className="size-[18px] min-w-[18px]" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        <img
+          src="/images/global/bg_right.png"
+          alt="imFage"
+          title="image"
+          width={"auto"}
+          height={"auto"}
+          className="absolute right-0 bottom-0 z-[0]"
+        />
+
+        {/* Pagination */}
+        <div className="relative container py-10 z-[1]">
+          <Pagination />
         </div>
       </div>
     </div>

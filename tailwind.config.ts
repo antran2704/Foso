@@ -29,6 +29,9 @@ const config: Config = {
 
         // Custom gray colors
         "gray-50": "#667F93",
+        "gray-100": "#B3C5D4",
+        "gray-200": "#4D5F6E",
+        "gray-300": "#809FB8",
       },
       borderRadius: {
         "4xl": "2rem",
@@ -37,6 +40,17 @@ const config: Config = {
       maxWidth: {
         "8xl": "90rem",
       },
+    },
+    container: {
+      center: true,
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+      },
+      padding: "20px",
     },
     fontFamily: {
       raleway: ["var(--font-raleway)"],
