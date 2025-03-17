@@ -22,6 +22,7 @@ const config: Config = {
         "dark-100": "#050505",
         "dark-200": "#33404A",
         "dark-300": "#052B1E",
+        "dark-400": "#231F20",
 
         // Custom blue colors
         "blue-50": "#E2F0FE",

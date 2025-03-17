@@ -23,7 +23,7 @@ const Item = () => {
         </span>
 
         <Link href={"/"}>
-          <h3 className="text-2xl text-dark-200 font-extrabold mb-4 mt-3 line-clamp-2">
+          <h3 className="text-2xl text-dark-200 hover:text-green-200 font-extrabold mb-4 mt-3 line-clamp-2">
             Tại sao BOM quan trọng trong quản lý sản xuất?
           </h3>
         </Link>
@@ -55,7 +55,7 @@ const Item = () => {
         </div>
         <Link
           href="/"
-          className="flex items-center text-gray-50 text-lg font-semibold mt-4 gap-4">
+          className="flex items-center text-gray-50 hover:text-green-200 text-lg font-semibold mt-4 gap-4">
          Khám phá thêm
           <GoArrowRight className="size-6 min-w-6" />
         </Link>

@@ -37,14 +37,16 @@ const MobileMenu = () => {
             [isOpen ? "translate-x-0" : "-translate-x-[150%]"],
           )}>
           <div className="flex items-center justify-between">
-            <img
-              src="/images/global/logo.png"
-              alt="Logo Foso"
-              title="Logo Foso"
-              width={100}
-              height={100}
-            />
-
+           <Link href={"/"}>
+              <img
+                src="/images/global/logo.png"
+                alt="Logo Foso"
+                title="Logo Foso"
+                width={100}
+                height={100}
+              />
+  
+           </Link>
             <IoClose onClick={toggleMenu} className="size-8 min-w-8 cursor-pointer" />
           </div>
 

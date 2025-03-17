@@ -4,7 +4,7 @@ import { InputSearch } from "../components/Input";
 import Pagination from "../components/Pagination";
 import HeroBanner from "./components/HeroBanner";
 import BlogItem from "~/app/components/Blog/Item";
-import { GoArrowUpRight } from "react-icons/go";
+import SupportBlock from "../components/Support";
 
 export default function HomePage() {
   return (
@@ -68,10 +68,10 @@ export default function HomePage() {
           className="absolute left-0 -top-1/2 z-[0]"
         />
 
-        <div className="relative container flex lg:flex-row flex-col-reverse justify-between z-[1]">
+        <div className="relative container flex lg:flex-row flex-col-reverse justify-between gap-8 z-[1]">
           {/* Main content area */}
-          <div className="lg:w-8/12 w-full px-4 py-6">
-            <h2 className="text-4xl font-extrabold">Tất Cả Bài Viết</h2>
+          <div className="lg:w-9/12 w-full py-6">
+            <h2 className="lg:text-4xl md:text-3xl text-2xl font-extrabold">Tất Cả Bài Viết</h2>
 
             {/* Hero banner */}
             <HeroBanner />
@@ -84,7 +84,7 @@ export default function HomePage() {
           </div>
 
           {/* Right sidebar */}
-          <div className="lg:w-4/12 w-full py-6 px-3">
+          <div className="lg:w-3/12 w-full py-6">
             <div className="mb-6">
               <h2 className="text-2xl font-extrabold text-dark-100">
                 Tìm kiếm
@@ -171,67 +171,7 @@ export default function HomePage() {
             </div>
 
             {/* Support chat blocks */}
-            <div className="flex lg:flex-col md:flex-row flex-col gap-8">
-              <div className="lg:w-full md:w-1/2 w-full bg-gradient-to-tr from-[#013DA0] to-[#0375F3] py-10 rounded-lg">
-                <img
-                  src="/images/advertisement/adv_2.png"
-                  alt="Digital illustration"
-                  width="auto"
-                  height="auto"
-                  className="mx-auto"
-                />
-
-                <div className="px-6">
-                  <div className="flex items-center justify-center mt-10 gap-5">
-                    <img
-                      src="/images/advertisement/adv_4.png"
-                      alt="Digital illustration"
-                      width="auto"
-                      height="auto"
-                    />
-
-                    <div className="flex flex-col items-center">
-                      <h3 className="text-xl font-bold text-white text-center">
-                        Miễn phí dùng thử
-                      </h3>
-                      <img
-                        src="/images/advertisement/adv_3.png"
-                        alt="Digital illustration"
-                        width="auto"
-                        height="auto"
-                      />
-                    </div>
-                  </div>
-
-                  <button className="w-full flex items-center justify-between text-white text-sm font-bold rounded-5xl h-[50px] mt-8 px-6 py-3 border-2 border-white gap-10">
-                    Tham gia ngay
-                    <GoArrowUpRight className="size-[18px] min-w-[18px]" />
-                  </button>
-                </div>
-              </div>
-
-              <div className="lg:w-full md:w-1/2 w-full bg-gradient-to-tr from-[#013DA0] to-[#0375F3] py-10 rounded-lg">
-                <img
-                  src="/images/advertisement/adv_5.png"
-                  alt="Digital illustration"
-                  width="auto"
-                  height="auto"
-                  className="mx-auto"
-                />
-
-                <div className="px-6">
-                  <p className="text-lg font-bold md:text-left text-center text-white my-6">
-                    Gia nhập cộng đồng FMRP Việt – Kết nối, chia sẻ, cùng phát
-                    triển!
-                  </p>
-
-                  <button className="w-full flex items-center justify-between text-white text-sm font-bold rounded-5xl h-[50px] px-6 py-3 border-2 border-white gap-10">
-                    Tham gia ngay
-                    <GoArrowUpRight className="size-[18px] min-w-[18px]" />
-                  </button>
-                </div>
-              </div>
-            </div>
+            <SupportBlock />
           </div>
         </div>
 

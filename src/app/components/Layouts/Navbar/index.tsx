@@ -8,15 +8,17 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 flex justify-center py-6 z-50">
       <div className="lg:max-w-7xl w-full flex items-center lg:justify-center justify-between py-3 px-8 bg-white shadow-lg rounded-[40px] gap-10">
-        <Image
-          src="/images/global/logo.png"
-          className="w-[138px]"
-          priority={true}
-          alt="Logo Foso"
-          title="Logo Foso"
-          width={100}
-          height={100}
-        />
+       <Link href="/">
+          <Image
+            src="/images/global/logo.png"
+            className="w-[138px]"
+            priority={true}
+            alt="Logo Foso"
+            title="Logo Foso"
+            width={100}
+            height={100}
+          />
+       </Link>
 
         <ul className="lg:flex hidden items-center gap-2">
           <li className="flex items-center">
@@ -26,15 +28,15 @@ const Navbar = () => {
               Về Chúng tôi
             </Link>
           </li>
-          <li className="flex items-center">
+          <li className="group flex items-center">
             <Link
               href={"/"}
-              className="relative text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="relative text-sm text-dark-50 font-medium group-hover:text-green-200 p-2">
               Giải pháp
             </Link>
-            <IoIosArrowDown className="min-w-4 size-4" />
+            <IoIosArrowDown className="min-w-4 size-4 group-hover:text-green-200" />
           </li>
-          <li className="flex items-center">
+          <li className="group flex items-center">
             <Link
               href={"/"}
               className="relative text-sm text-dark-50 font-bold p-2">
