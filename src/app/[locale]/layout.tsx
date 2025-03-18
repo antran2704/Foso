@@ -4,6 +4,7 @@ import { Raleway } from "next/font/google";
 
 import "~/app/globals.scss";
 import Navbar from "../components/Layouts/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 const ralewayFont = Raleway({
   display: "swap",
@@ -38,6 +39,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
+
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>

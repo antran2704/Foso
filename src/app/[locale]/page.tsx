@@ -3,10 +3,12 @@ import Breadcrumb from "../components/Breadcrumb";
 import { InputSearch } from "../components/Input";
 import Pagination from "../components/Pagination";
 import HeroBanner from "./components/HeroBanner";
-import BlogItem from "~/app/components/Blog/Item";
 import SupportBlock from "../components/Support";
+import BlogManage from "./components/BlogManage";
 
-export default function HomePage() {
+export default function Page() {
+
+
   return (
     <div>
       <div className="container flex items-center justify-center mt-12">
@@ -77,10 +79,7 @@ export default function HomePage() {
             <HeroBanner />
 
             {/* Blog grid */}
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-              <BlogItem />
-              <BlogItem />
-            </div>
+            <BlogManage />
           </div>
 
           {/* Right sidebar */}

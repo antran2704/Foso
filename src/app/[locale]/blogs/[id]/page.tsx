@@ -1,12 +1,16 @@
-import { MdKeyboardArrowUp } from "react-icons/md";
+import { Fragment } from "react";
 
 import Breadcrumb from "~/app/components/Breadcrumb";
 import SupportBlock from "~/app/components/Support";
 import BlogItem from "~/app/components/Blog/Item";
+import TableContent from "./components/TableContent";
+import Progress from "./components/Progress";
 
 const BlogDetailPage = () => {
   return (
-    <div>
+    <Fragment>
+      <Progress />
+
       {/* Social */}
       <div className="fixed xl:flex hidden flex-col left-1 bottom-10 gap-2 z-10">
         <p className="text-base font-extrabold text-dark-200">Chia sẻ</p>
@@ -140,7 +144,7 @@ const BlogDetailPage = () => {
             </div>
 
             {/* Content */}
-            <div className="flex flex-col gap-10">
+            <div id="main_content" className="flex flex-col gap-10">
               <div className="flex flex-col items-center">
                 <img
                   src="/images/blogDetailPage/image_1.png"
@@ -172,7 +176,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-1"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   1. Quy trình 5S là gì?
                 </h2>
 
@@ -217,7 +223,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-2"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   2. Lợi ích quy trình 5S đem lại
                 </h2>
 
@@ -257,7 +265,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-3"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   3. Tại sao doanh nghiệp nên áp dụng quy trình 5S?
                 </h2>
 
@@ -269,7 +279,9 @@ const BlogDetailPage = () => {
                 </p>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-3.1"
+                    className="section text-base font-medium text-green-200 mb-1">
                     3.1 Cải thiện rõ nét môi trường làm việc
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -280,7 +292,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-3.2"
+                    className="section text-base font-medium text-green-200 mb-1">
                     3.2 Tiết kiệm thời gian đáng kể
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -293,7 +307,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-3.3"
+                    className="section text-base font-medium text-green-200 mb-1">
                     3.3 Tăng năng suất làm việc
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -305,7 +321,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-3.4"
+                    className="section text-base font-medium text-green-200 mb-1">
                     3.4 Tiết kiệm chi phí
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -317,7 +335,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-3.5"
+                    className="section text-base font-medium text-green-200 mb-1">
                     3.5 Tăng chất lượng sản phẩm
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -343,7 +363,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-4"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   4. Quy trình 5S gồm các bước
                 </h2>
 
@@ -354,7 +376,9 @@ const BlogDetailPage = () => {
                 </p>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-4.1"
+                    className="section text-base font-medium text-green-200 mb-1">
                     4.1 Seiri (Ngăn nắp)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -366,7 +390,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-4.2"
+                    className="section text-base font-medium text-green-200 mb-1">
                     4.2 Seiton (Sắp xếp)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -377,7 +403,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-4.3"
+                    className="section text-base font-medium text-green-200 mb-1">
                     4.3 Seiso (Vệ sinh)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -390,7 +418,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-4.4"
+                    className="section text-base font-medium text-green-200 mb-1">
                     4.4 Seiketsu (Tiêu chuẩn hóa)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -401,7 +431,9 @@ const BlogDetailPage = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-base font-medium text-green-200 mb-1">
+                  <h3
+                    id="section-4.5"
+                    className="section text-base font-medium text-green-200 mb-1">
                     4.5 Shitsuke (Kỷ luật)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -429,7 +461,90 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-5"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  5. Quy trình được thực hiện như sau:
+                </h2>
+
+                <p className="text-base font-medium text-dark-400">
+                  Có thể nói quy trình được áp dụng rộng rãi tại các doanh
+                  nghiệp trên toàn thế giới, bao gồm cả Việt Nam. Điều này càng
+                  chứng minh rõ nét tính hiệu quả của quy trình đem lại. Sau đây
+                  là các lý do vì sao bạn nên lựa chọn quy trình:
+                </p>
+
+                <div>
+                  <h3
+                    id="section-5.1"
+                    className="section text-base font-medium text-green-200 mb-1">
+                    5.1 Giai đoạn chuẩn bị
+                  </h3>
+                  <p className="text-base font-medium text-dark-400">
+                    Trong giai đoạn chuẩn bị, doanh nghiệp cần bố trí nhân lực
+                    đứng ra điều hành và quản lý quá trình thực hiện quy trình
+                    5S. Việc phân bổ cụ thể như vậy sẽ giúp quá trình áp dụng
+                    quy tắc 5S sẽ hiệu quả hơn.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    id="section-5.2"
+                    className="section text-base font-medium text-green-200 mb-1">
+                    5.2 Triển khai rộng rãi
+                  </h3>
+                  <p className="text-base font-medium text-dark-400">
+                    Đầu tiên doanh nghiệp cần chuẩn bị tài liệu, kiến thức về
+                    quy trình 5S cho tất cả mọi người trong doanh nghiệp nắm rõ
+                    kiến thức cũng như cách áp dụng như thế nào vào doanh nghiệp
+                    của bạn.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    id="section-5.3"
+                    className="section text-base font-medium text-green-200 mb-1">
+                    5.3 Thực hiện vệ sinh toàn bộ doanh nghiệp
+                  </h3>
+                  <p className="text-base font-medium text-dark-400">
+                    Đây là bước có thể khiến mọi người không hào hứng trong các
+                    bước của quy trình. Doanh nghiệp nên tuyên truyền tích cực
+                    và tạo không khí hào hứng cho từng cá nhân.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    id="section-5.4"
+                    className="section text-base font-medium text-green-200 mb-1">
+                    5.4 Sàng lọc, sắp xếp và đánh giá
+                  </h3>
+                  <p className="text-base font-medium text-dark-400">
+                    Đây là bước tiếp theo sau khi đã hoàn thành bước vệ sinh
+                    toàn bộ doanh nghiệp. Doanh nghiệp cần đưa ra tiêu chuẩn rõ
+                    ràng để việc thực hiện sàng lọc và sắp xếp trở nên khoa học
+                    hơn, hiệu quả hơn và dễ dàng tìm kiếm sau này
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    id="section-5.5"
+                    className="section text-base font-medium text-green-200 mb-1">
+                    5.5 Đánh giá
+                  </h3>
+                  <p className="text-base font-medium text-dark-400">
+                    Sau khi đã hoàn tất các bước, doanh nghiệp nên tổng kết lại
+                    quá trình cải tiến và xem xét cần cải tiến phương diện nào
+                    hay không trong quá trình thực hiện quy trình 5S.
+                  </p>
+                </div>
+              </div>
+
+              <div id="section-6" className="flex flex-col gap-5">
+                <h2 className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   6. Quy trình 5S có giống với Kaizen?
                 </h2>
 
@@ -467,7 +582,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-7"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   7. Đối tượng nào nên áp dụng 5S?
                 </h2>
 
@@ -501,7 +618,9 @@ const BlogDetailPage = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="md:text-2xl text-xl font-bold text-green-200 px-2">
+                <h2
+                  id="section-8"
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
                   8. Các yếu tố tạo nên thành công cho quy trình 5S
                 </h2>
 
@@ -680,132 +799,39 @@ const BlogDetailPage = () => {
           </div>
 
           {/* Right sidebar */}
-          <div className="lg:w-4/12 w-full py-6">
-            <div className="mb-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-2xl font-extrabold text-dark-100">
-                  Nội dung bài viết
-                </h2>
+          <div className="lg:w-4/12 w-full lg:py-6 py-0">
+            <div className="lg:sticky top-32">
+              <TableContent />
 
-                <MdKeyboardArrowUp className="size-6 min-w-6 text-green-200" />
-              </div>
-              <ul className="flex flex-col mt-6 gap-1">
-                <li className="text-lg font-bold text-green-200">
-                  1. Quy trình 5S là gì?
-                </li>
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  2. Lợi ích quy trình 5S đem lại
-                </li>
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  3. Tại sao doanh nghiệp nên áp dụng quy trình 5S?
-                </li>
-
-                <ul className="flex flex-col pl-5 gap-1">
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    3.1 Cải thiện rõ nét môi trường làm việc
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    3.2 Tiết kiệm thời gian đáng kểc
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    3.3 Tăng năng suất làm việc
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    3.4 Tiết kiệm chi phí
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    3.5 Tăng chất lượng sản phẩm
-                  </li>
-                </ul>
-
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  4. Quy trình 5S gồm các bước:
-                </li>
-
-                <ul className="flex flex-col pl-5 gap-1">
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    4.1 Seiri (Ngăn nắp)
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    4.2 Seiton (Sắp xếp)
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    4.3 Seiso (Vệ sinh)
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    4.4 Seiketsu (Tiêu chuẩn hóa)
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    4.5 Shitsuke (Kỷ luật)
-                  </li>
-                </ul>
-
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  5. Quy trình được thực hiện như sau:
-                </li>
-
-                <ul className="flex flex-col pl-5 gap-1">
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    5.1 Giai đoạn chuẩn bị
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    5.2 Triển khai rộng rãi
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    5.3 Thực hiện vệ sinh toàn bộ doanh nghiệp
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    5.4 Sàng lọc, sắp xếp và đánh giá
-                  </li>
-
-                  <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                    5.5 Đánh giá
-                  </li>
-                </ul>
-
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  6. Quy trình 5S có giống với Kaizen?
-                </li>
-
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  7. Đối tượng nào nên áp dụng 5S?
-                </li>
-
-                <li className="text-lg font-medium text-dark-200 cursor-pointer">
-                  8. Các yếu tố tạo nên thành công cho quy trình 5S
-                </li>
-              </ul>
+              {/* Support chat blocks */}
+              <SupportBlock />
             </div>
-
-            {/* Support chat blocks */}
-            <SupportBlock />
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="my-10">
           <h2 className="lg:text-4xl md:text-3xl text-2xl font-extrabold mb-6">
             Bài viết liên quan
           </h2>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-            <BlogItem />
-            <BlogItem />
-            <BlogItem />
+            {[...new Array(3)].map((item, index) => (
+              <BlogItem
+                key={index}
+                data={{
+                  id: index.toString(),
+                  title: "Tại sao BOM quan trọng trong quản lý sản xuất?",
+                  tag: "Quản Lý Sản Xuất",
+                  time: "17/11/2022",
+                  duration: "10 phút đọc",
+                  image: "/images/article/image_1.png",
+                }}
+              />
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
