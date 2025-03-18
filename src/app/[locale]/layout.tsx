@@ -28,11 +28,36 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={ralewayFont.className}>
       <head>
-        <link rel="icon" href="/images/global/logo.png" />
+        <title>Foso</title>
+        <meta name="title" content="Foso" />
+        <meta name="description" content="Foso" />
+
+        <link rel="icon" href="/images/global/logo_icon.png" />
         <meta name="theme-color" content="#0A0A0A" />
         {/* <meta name="color-scheme" content="dark light" /> */}
         <link rel="apple-touch-icon" href="/images/global/logo.png" />
-        <link rel="shortcut icon" type="image/png" href="/images/global/logo.png" />
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href="/images/global/logo.png"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Foso" />
+        <meta property="og:description" content="Foso" />
+        <meta
+          property="og:image"
+          content="/images/global/logo.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Foso" />
+        <meta property="twitter:description" content="Foso" />
+        <meta
+          property="twitter:image"
+          content="/images/global/logo.png"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body>

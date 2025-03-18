@@ -7,8 +7,6 @@ import SupportBlock from "../components/Support";
 import BlogManage from "./components/BlogManage";
 
 export default function Page() {
-
-
   return (
     <div>
       <div className="container flex items-center justify-center mt-12">
@@ -73,7 +71,9 @@ export default function Page() {
         <div className="relative container flex lg:flex-row flex-col-reverse justify-between gap-8 z-[1]">
           {/* Main content area */}
           <div className="lg:w-9/12 w-full py-6">
-            <h2 className="lg:text-4xl md:text-3xl text-2xl font-extrabold">Tất Cả Bài Viết</h2>
+            <h2 className="lg:text-4xl md:text-3xl text-2xl font-extrabold">
+              Tất Cả Bài Viết
+            </h2>
 
             {/* Hero banner */}
             <HeroBanner />
