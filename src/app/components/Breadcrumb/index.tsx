@@ -23,7 +23,8 @@ const Breadcrumb = (props: Props) => {
                 href={item.href ? item.href : "/"}
                 className={clsx("text-sm text-dark-100", [
                   index === lastIndex ? "font-bold" : "hover:text-green-200",
-                ])}>
+                ])}
+              >
                 {item.name}
               </Link>
             </li>

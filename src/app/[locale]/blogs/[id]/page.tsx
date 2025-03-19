@@ -178,7 +178,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-1"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   1. Quy trình 5S là gì?
                 </h2>
 
@@ -225,7 +226,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-2"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   2. Lợi ích quy trình 5S đem lại
                 </h2>
 
@@ -267,7 +269,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-3"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   3. Tại sao doanh nghiệp nên áp dụng quy trình 5S?
                 </h2>
 
@@ -281,7 +284,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-3.1"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     3.1 Cải thiện rõ nét môi trường làm việc
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -294,7 +298,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-3.2"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     3.2 Tiết kiệm thời gian đáng kể
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -309,7 +314,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-3.3"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     3.3 Tăng năng suất làm việc
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -323,7 +329,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-3.4"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     3.4 Tiết kiệm chi phí
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -337,7 +344,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-3.5"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     3.5 Tăng chất lượng sản phẩm
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -365,7 +373,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-4"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   4. Quy trình 5S gồm các bước
                 </h2>
 
@@ -378,7 +387,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-4.1"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     4.1 Seiri (Ngăn nắp)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -392,7 +402,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-4.2"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     4.2 Seiton (Sắp xếp)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -405,7 +416,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-4.3"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     4.3 Seiso (Vệ sinh)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -420,7 +432,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-4.4"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     4.4 Seiketsu (Tiêu chuẩn hóa)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -433,7 +446,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-4.5"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     4.5 Shitsuke (Kỷ luật)
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -463,7 +477,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-5"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   5. Quy trình được thực hiện như sau:
                 </h2>
 
@@ -477,7 +492,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-5.1"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     5.1 Giai đoạn chuẩn bị
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -491,7 +507,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-5.2"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     5.2 Triển khai rộng rãi
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -505,7 +522,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-5.3"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     5.3 Thực hiện vệ sinh toàn bộ doanh nghiệp
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -518,7 +536,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-5.4"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     5.4 Sàng lọc, sắp xếp và đánh giá
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -532,7 +551,8 @@ const BlogDetailPage = () => {
                 <div>
                   <h3
                     id="section-5.5"
-                    className="section text-base font-medium text-green-200 mb-1">
+                    className="section text-base font-medium text-green-200 mb-1"
+                  >
                     5.5 Đánh giá
                   </h3>
                   <p className="text-base font-medium text-dark-400">
@@ -584,7 +604,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-7"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   7. Đối tượng nào nên áp dụng 5S?
                 </h2>
 
@@ -620,7 +641,8 @@ const BlogDetailPage = () => {
               <div className="flex flex-col gap-5">
                 <h2
                   id="section-8"
-                  className="section md:text-2xl text-xl font-bold text-green-200 px-2">
+                  className="section md:text-2xl text-xl font-bold text-green-200 px-2"
+                >
                   8. Các yếu tố tạo nên thành công cho quy trình 5S
                 </h2>
 

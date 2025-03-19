@@ -24,20 +24,23 @@ const MobileMenu = () => {
       <div
         className={clsx("fixed top-0 right-0 left-0 bottom-0 z-10", [
           !isOpen && "pointer-events-none",
-        ])}>
+        ])}
+      >
         <div
           onClick={toggleMenu}
           className={clsx(
             "absolute top-0 right-0 left-0 bottom-0 bg-black/50 transition-all ease-linear duration-75 z-10",
             [isOpen ? "opacity-100" : "opacity-0 pointer-events-none"],
-          )}></div>
+          )}
+        ></div>
         <div
           className={clsx(
             "relative md:w-1/2 w-full h-full bg-white p-5 transition-all ease-linear duration-75 z-20",
             [isOpen ? "translate-x-0" : "-translate-x-[150%]"],
-          )}>
+          )}
+        >
           <div className="flex items-center justify-between">
-           <Link href={"/"}>
+            <Link href={"/"}>
               <img
                 src="/images/global/logo.png"
                 alt="Logo Foso"
@@ -45,32 +48,38 @@ const MobileMenu = () => {
                 width={100}
                 height={100}
               />
-  
-           </Link>
-            <IoClose onClick={toggleMenu} className="size-8 min-w-8 cursor-pointer" />
+            </Link>
+            <IoClose
+              onClick={toggleMenu}
+              className="size-8 min-w-8 cursor-pointer"
+            />
           </div>
 
           <ul className="flex flex-col mt-5 gap-2">
             <Link
               href={"/"}
-              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2"
+            >
               Về Chúng tôi
             </Link>
             <Link
               href={"/"}
-              className="flex items-center justify-between text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="flex items-center justify-between text-sm text-dark-50 font-medium hover:text-green-200 p-2"
+            >
               Giải pháp
               <IoIosArrowDown className="min-w-4 size-4" />
             </Link>
             <Link
               href={"/"}
-              className="flex items-center justify-between text-sm text-dark-50 font-bold hover:text-green-200 p-2">
+              className="flex items-center justify-between text-sm text-dark-50 font-bold hover:text-green-200 p-2"
+            >
               Tài nguyên
               <IoIosArrowDown className="min-w-4 size-4" />
             </Link>
             <Link
               href={"/"}
-              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2"
+            >
               Liên hệ
             </Link>
           </ul>

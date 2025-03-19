@@ -55,7 +55,8 @@ const Collapse = (props: Props) => {
     <div className={classNames?.wrap}>
       <div
         onClick={toggleContent}
-        className="flex items-center justify-between cursor-pointer">
+        className="flex items-center justify-between cursor-pointer"
+      >
         <h2 className="text-2xl font-extrabold text-dark-100">{title}</h2>
 
         <MdKeyboardArrowDown
@@ -70,7 +71,8 @@ const Collapse = (props: Props) => {
         className={clsx(
           "transition-all ease-linear duration-100 pb-5 opacity-0",
           [show ? "overflow-auto" : "overflow-hidden"],
-        )}>
+        )}
+      >
         {children}
       </div>
     </div>

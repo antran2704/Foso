@@ -98,7 +98,8 @@ export default function Page() {
               <ul className="flex flex-col mt-6 gap-4">
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Tất cả
                   </li>
@@ -108,7 +109,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Thiết Kế Website
                   </li>
@@ -118,7 +120,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Thiết Kế App Mobile
                   </li>
@@ -128,7 +131,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Quản Lý Sản Xuất
                   </li>
@@ -138,7 +142,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Quản Lý Bán Hàng
                   </li>
@@ -148,7 +153,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Báo Chí Nói Về FOSO
                   </li>
@@ -158,7 +164,8 @@ export default function Page() {
                 </Link>
                 <Link
                   href="/"
-                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5">
+                  className="group flex items-center justify-between pb-2 border-b border-b-[#F1F5F7] gap-5"
+                >
                   <li className="text-lg font-medium text-dark-200 group-hover:text-green-200">
                     Tin Tức FOSO
                   </li>

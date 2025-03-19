@@ -11,7 +11,7 @@ const Item = (props: Props) => {
   const { data } = props;
 
   return (
-    <div className="rounded-lg shadow-sm overflow-hidden">
+    <div className="rounded-lg overflow-hidden">
       <div className="relative pb-[100%]">
         <Link href={`/blogs/${data.id}`}>
           <img
@@ -57,13 +57,16 @@ const Item = (props: Props) => {
               title="icon"
               className="size-6 min-w-6"
             />
-            <p className="text-base font-medium text-gray-50">{data.duration}</p>
+            <p className="text-base font-medium text-gray-50">
+              {data.duration}
+            </p>
           </div>
         </div>
         <Link
           href={`/blogs/${data.id}`}
-          className="flex items-center text-gray-50 hover:text-green-200 text-lg font-semibold mt-4 gap-4">
-         Khám phá thêm
+          className="flex items-center text-gray-50 hover:text-green-200 text-lg font-semibold mt-4 gap-4"
+        >
+          Khám phá thêm
           <GoArrowRight className="size-6 min-w-6" />
         </Link>
       </div>

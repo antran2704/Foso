@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 flex justify-center py-6 z-50">
       <div className="lg:max-w-7xl w-full flex items-center lg:justify-center justify-between py-3 px-8 bg-white shadow-lg rounded-[40px] gap-10">
-       <Link href="/">
+        <Link href="/">
           <Image
             src="/images/global/logo.png"
             className="w-[138px]"
@@ -18,20 +18,22 @@ const Navbar = () => {
             width={100}
             height={100}
           />
-       </Link>
+        </Link>
 
         <ul className="lg:flex hidden items-center gap-2">
           <li className="flex items-center">
             <Link
               href={"/"}
-              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2"
+            >
               Về Chúng tôi
             </Link>
           </li>
           <li className="group flex items-center">
             <Link
               href={"/"}
-              className="relative text-sm text-dark-50 font-medium group-hover:text-green-200 p-2">
+              className="relative text-sm text-dark-50 font-medium group-hover:text-green-200 p-2"
+            >
               Giải pháp
             </Link>
             <IoIosArrowDown className="min-w-4 size-4 group-hover:text-green-200" />
@@ -39,7 +41,8 @@ const Navbar = () => {
           <li className="group flex items-center">
             <Link
               href={"/"}
-              className="relative text-sm text-dark-50 font-bold p-2">
+              className="relative text-sm text-dark-50 font-bold p-2"
+            >
               Tài nguyên
               <span className="absolute min-w-[6px] size-[6px] top-[90%] left-1/2 -translate-x-1/2 bg-green-100 rounded-full"></span>
             </Link>
@@ -48,7 +51,8 @@ const Navbar = () => {
           <li className="flex items-center">
             <Link
               href={"/"}
-              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2">
+              className="text-sm text-dark-50 font-medium hover:text-green-200 p-2"
+            >
               Liên hệ
             </Link>
           </li>
@@ -79,7 +83,7 @@ const Navbar = () => {
             <IoIosArrowDown className="min-w-4 size-4" />
           </button>
         </div>
-        
+
         <MobileMenu />
       </div>
     </nav>

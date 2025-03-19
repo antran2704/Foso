@@ -1,6 +1,6 @@
 const Item = () => {
   return (
-    <div className="rounded-lg shadow-sm overflow-hidden">
+    <div className="rounded-lg overflow-hidden">
       <div className="animate-pulse bg-gray-100 w-full h-[400px] rounded-3xl" />
       <div className="mt-2">
         <span className="w-[144px] h-6 bg-gray-100 animate-pulse rounded-lg" />

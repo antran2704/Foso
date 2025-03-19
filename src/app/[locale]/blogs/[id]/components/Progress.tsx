@@ -8,14 +8,14 @@ const Progress = () => {
   const handleWidth = () => {
     const element = document.getElementById("main_content");
 
-    if(!element) return
+    if (!element) return;
 
     const top = window.scrollY;
     const totalHeight = element.offsetHeight;
 
-    const width = (top / totalHeight as number) * 100;
+    const width = ((top / totalHeight) as number) * 100;
 
-    if(progressRef.current) progressRef.current.style.width = `${width}%`;
+    if (progressRef.current) progressRef.current.style.width = `${width}%`;
   };
 
   useEffect(() => {
@@ -28,7 +28,8 @@ const Progress = () => {
   return (
     <div
       ref={progressRef}
-      className="fixed top-0 left-0 h-[10px] bg-[#76E6C1] z-10"></div>
+      className="fixed top-0 left-0 h-[10px] bg-[#76E6C1] z-10"
+    ></div>
   );
 };
 
